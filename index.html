@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Kalkulator Sederhana</h1>
+    <div class="calculator">
+      <div class="bagian_hasil_perhiungan">
+        <input id="hasil" class="tampilan_hitung" type="text" disabled />
+      </div>
+      <div class="bagian_button_perhitungan">
+        <div class="wrapper-button1">
+          <div id="operasi" class="button2">
+            <button onclick="clearScreen()" class="text-button">AC</button>
+          </div>
+          <div id="operasi" class="button2">
+            <button onclick="calculate()" class="text-button">=</button>
+          </div>
+          <div id="operasi" class="button2">
+            <button onclick="display('/')" class="text-button">/</button>
+          </div>
+        </div>
+        <div class="wrapper-button">
+          <div class="button1">
+            <button onclick="display('7')" class="text-button">7</button>
+          </div>
+          <div class="button1">
+            <button onclick="display('8')" class="text-button">8</button>
+          </div>
+          <div class="button1">
+            <button onclick="display('9')" class="text-button">9</button>
+          </div>
+          <div id="operasi" class="button2">
+            <button onclick="display('*')" class="text-button">*</button>
+          </div>
+        </div>
+        <div class="wrapper-button">
+          <div class="button1">
+            <button onclick="display('4')" class="text-button">4</button>
+          </div>
+          <div class="button1">
+            <button onclick="display('5')" class="text-button">5</button>
+          </div>
+          <div class="button1">
+            <button onclick="display('6')" class="text-button">6</button>
+          </div>
+          <div id="operasi" class="button2" onclick="display('-')">
+            <button onclick="display('-')" class="text-button">-</button>
+          </div>
+        </div>
+        <div class="wrapper-button">
+          <div class="button1">
+            <button onclick="display('1')" class="text-button">1</button>
+          </div>
+          <div class="button1">
+            <button onclick="display('2')" class="text-button">2</button>
+          </div>
+          <div class="button1">
+            <button onclick="display('3')" class="text-button">3</button>
+          </div>
+          <div id="operasi" class="button2">
+            <button onclick="display('+')" class="text-button">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
